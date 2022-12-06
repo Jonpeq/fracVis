@@ -20,11 +20,6 @@ var valorDenRand = getRndInteger(1,16);
 // Vis Dinamico Reta Rand
 
 function editarRetaRand(valorNumRand, valorDenRand){
-
-  if(document.getElementById("visReta")){
-    const element = document.getElementById("visReta");
-    element.remove();
-  }
   
   var valorNum = valorNumRand;
   var num = parseInt(valorNum);
@@ -35,7 +30,7 @@ function editarRetaRand(valorNumRand, valorDenRand){
   console.log(razao);
   
   var cReta = document.createElement("canvas");
-  cReta.setAttribute("id", "visReta");
+  cReta.setAttribute("id", "visRetaRand");
   cReta.setAttribute("width", "800");
   cReta.setAttribute("height", "150");
   document.body.appendChild(cReta);
@@ -69,11 +64,6 @@ function editarRetaRand(valorNumRand, valorDenRand){
 // Vis Dinamico Pizza Rando
 
 function editarPizzaRand(){
-
-  if(document.getElementById("visPizza")){
-    const element = document.getElementById("visPizza");
-    element.remove();
-  }
   
   var valorNum = valorNumRand;
   var num = parseInt(valorNum);
@@ -83,7 +73,7 @@ function editarPizzaRand(){
   var razao = Math.floor((num-1)/den);
   
   var c = document.createElement("canvas");
-  c.setAttribute("id", "visPizza");
+  c.setAttribute("id", "visPizzaRand");
   c.setAttribute("width", "1200");
   c.setAttribute("height", "200");
   document.body.appendChild(c);
