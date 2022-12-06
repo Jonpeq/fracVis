@@ -193,7 +193,7 @@ function editarPizzaRand(){
   }
 }
 
-editarRetaRand(valorNumRand, valorDenRand);
+// editarRetaRand(valorNumRand, valorDenRand);
 editarPizzaRand(valorNumRand, valorDenRand);
 
 
@@ -441,6 +441,6 @@ function editarPizza(){
 // chamada das funções
 
 function editar(){
-   editarReta();
+   //editarReta();
    editarPizza();
 }
